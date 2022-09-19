@@ -2,22 +2,19 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
-        Scanner sx = new Scanner(System.in);
+        Scanner tp = new Scanner(System.in); //Сканер стоимости билета
         System.out.println("Введите стоимость билета:");
 
-        int x = sx.nextInt(); //Стоимость биллета
+        int ticket_price = tp.nextInt(); //Стоимость биллета
 
-        Scanner sy = new Scanner(System.in);
+        Scanner not = new Scanner(System.in); //Сканер количества билетов
         System.out.println("Количество биллетов:");
 
-        int y = sy.nextInt(); // Количество билетов
+        int number_of_tickets = not.nextInt(); // Количество билетов
 
-        int i = 20; // Стоимость 1 мили
-        int formula = (x * y) / i;
+        int cost_per_mile = 20; // Стоимость 1 мили
+        int formula = (ticket_price * number_of_tickets) / cost_per_mile;
 
         System.out.println("Количество миль = " + formula);
-
-
     }
 }
