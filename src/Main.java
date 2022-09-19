@@ -5,15 +5,15 @@ public class Main {
         Scanner tp = new Scanner(System.in); //Сканер стоимости билета
         System.out.println("Введите стоимость билета:");
 
-        int ticket_price = tp.nextInt(); //Стоимость биллета
+        int ticketPrice = tp.nextInt(); //Стоимость биллета
 
         Scanner not = new Scanner(System.in); //Сканер количества билетов
         System.out.println("Количество биллетов:");
 
-        int number_of_tickets = not.nextInt(); // Количество билетов
+        int numberOfTickets = not.nextInt(); // Количество билетов
 
-        int cost_per_mile = 20; // Стоимость 1 мили
-        int formula = (ticket_price * number_of_tickets) / cost_per_mile;
+        int costPerMile = 20; // Стоимость 1 мили
+        int formula = (ticketPrice * numberOfTickets) / costPerMile;
 
         System.out.println("Количество миль = " + formula);
     }
